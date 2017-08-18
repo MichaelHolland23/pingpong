@@ -9,6 +9,9 @@ $(document).ready(function() {
       }  else if (index % 15 === 0) {
         return pingList
 
-        }
-      }
+      listArray.forEach(function(listItem){
+      $('ul#final').append("<li>" + listItem + "</li>");
+
+      };
     }
+  }
