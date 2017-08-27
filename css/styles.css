@@ -1,3 +1,14 @@
 #notnum {
   display:  none;
 }
+body{
+  background-color: green;
+}
+.jumbotron{
+  background: url(../img/firepaddle.png);
+}
+
+img {
+  float: right;
+  width: 30%
+}
