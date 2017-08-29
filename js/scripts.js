@@ -4,15 +4,15 @@ function begin(input) {
 
   for (var index = 1; index <= input; index += 1) {
     sum.push(index);
-    if ((index % 3) === 0) {
+    if ((index % 15) === 0) {
       sum.pop(index)
-      sum.push("ping");
+      sum.push("PING PONG!");
     } else if ((index % 5) === 0) {
       sum.pop(index)
       sum.push("pong");
-    } else if ((index % 15) === 0) {
+    } else if ((index % 3) === 0) {
       sum.pop(index)
-      sum.push("PING-PONG!");
+      sum.push("ping");
     }
   }
   return sum
@@ -25,7 +25,7 @@ $(document).ready(function() {
     var input = parseInt($("input#number").val());
     var result = begin(input);
 
-    var listArray = result.map(function(item)) {
+    var list = result.map(function(item) {
         return ("<li>" + item + "</li>")
     })
 

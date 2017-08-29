@@ -1,10 +1,10 @@
 #notNum {
   display:  none;
 }
-body{
+body {
   background-color: green;
 }
-.jumbotron{
+.jumbotron {
   background: url(../img/firepaddle.png);
 }
 
